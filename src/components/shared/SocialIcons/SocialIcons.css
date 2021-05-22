@@ -1,0 +1,47 @@
+.tp-icons-wrap .social-icons {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icons__item {
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+  /* color: #639; */
+}
+
+.social-icons__item:last-child {
+  margin-right: 0px;
+}
+.social-icons__item.linkedIn {
+  color: #00a0dc;
+}
+.social-icons__item.facebook {
+  color: #0088dc;
+}
+.social-icons__item.github {
+  color: #6e5494;
+}
+.social-icons__item.hackerRank {
+  color: #1ba94c;
+}
+
+/* .social-icons__item.linkedIn:hover {
+  color: #0e76a8;
+}
+.social-icons__item.facebook:hover {
+  color: #0088dc;
+}
+.social-icons__item.github:hover {
+  color: #6e5494;
+}
+.social-icons__item.hackerRank:hover {
+  color: #1ba94c;
+} */

@@ -1,0 +1,8 @@
+.footer-area > p {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.footer-area .social-icons {
+  justify-content: left;
+}

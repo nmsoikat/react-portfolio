@@ -1,0 +1,31 @@
+.sidebar-title a {
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #ddd;
+  margin-right: 3px;
+}
+
+.sidebar__item .icon svg {
+  width: 35px;
+  text-align: right;
+}
+
+.sidebar__item a {
+  display: inline-block;
+}
+
+li.sidebar__item a {
+  text-align: left;
+  margin-left: 9px;
+  border-bottom: 1px solid #7a42b1;
+}
+
+.logout-btn-wrap {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.sidebar-title {
+  text-align: center;
+}

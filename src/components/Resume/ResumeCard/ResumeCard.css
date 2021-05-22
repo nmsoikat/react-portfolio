@@ -1,0 +1,117 @@
+.resume{
+  margin-bottom: 15px;
+}
+
+.resume__title {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: var(--themeDarkColor);
+  font-size: 25px;
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 0.1px dotted var(--themeDarkColor); */
+}
+
+/* .resume__title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 85%;
+  width: 50%;
+  height: 2px;
+  background-color: #ff8d00;
+} */
+
+.resume-content__year-map {
+  width: 25%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-content__year-map h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.experience__year-map span {
+  display: block;
+}
+
+.resume-content {
+  display: flex;
+  border-radius: 6px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.resume-content__desc {
+  padding-bottom: 10px;
+  width: 75%;
+  border-bottom: 0.1px dotted #00203f;
+}
+
+.resume-content:last-child .resume-content__desc{
+  border-bottom: none;
+}
+
+
+
+
+.experience__company-name {
+  font-size: 14px;
+}
+
+.experience__designation {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.experience__responsibility{
+  margin-top: 15px;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.experience__responsibility ul{
+  font-size: 16px;
+}
+
+.experience__responsibility ul li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.experience__responsibility ul li:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  content: "";
+  background-color: #8a8a8a;
+}
+
+
+
+@media (max-width:991px){
+  .resume-content {
+    flex-direction: column;
+  }
+
+  .resume-content__desc,
+  .resume-content__year-map {
+    width: 100%;
+  }
+
+  .resume-content__year-map h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+}

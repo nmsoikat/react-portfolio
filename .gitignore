@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#configuration //fireabase config and secureToken
+/src/config
+
 # testing
 /coverage
 

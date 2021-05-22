@@ -1,0 +1,8 @@
+
+.main-portion__title {
+  color: #b40b4d;
+  margin-top: 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}

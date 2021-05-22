@@ -1,0 +1,32 @@
+.blog-item {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.blog-item:last-child {
+  margin-bottom: 0;
+}
+
+.blog-item__photo {
+  width: 300px;
+}
+
+.blog-item__photo img {
+  max-height: 150px;
+}
+
+.blog-item__content {
+  width: 80%;
+  margin-left: 15px;
+}
+
+.blog-item__title {
+  font-size: 20px;
+}

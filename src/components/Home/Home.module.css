@@ -1,0 +1,239 @@
+
+
+.homeContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url('../../images/top-page-bg-1.jpg') no-repeat; */
+  background: url('../../images/top-page-bg-2.jpg') no-repeat;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Itim', cursive;
+}
+
+.homeContainer::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: .8;
+  z-index: -1;
+}
+
+.mainContentWrap {
+  text-align: center;
+}
+
+.mainContentWrap h1 {
+  font-size: 90px;
+  color: var(--name);
+  margin-bottom: 4px;
+}
+.designation {
+  color: var(--white);
+  font-size: 40px;
+}
+
+.animationArea {
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(to left, #7209b7, #b5179e);
+   */
+  position: absolute;
+  z-index: -1;
+}
+
+.itemWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.itemWrap .item {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  bottom: -100px;
+  border-radius: 5px;
+}
+
+/*------ flow one ---------- */
+.itemWrap .item:nth-child(1) {
+  left: 5%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  /* background-color: red; */
+}
+
+.itemWrap .item:nth-child(2) {
+  left: 15%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 10s;
+  animation-delay: .2s;
+  /* background-color: red; */
+}
+
+.itemWrap .item:nth-child(3) {
+  left: 30%;
+  width: 15x;
+  height: 15x;
+  animation-duration: 15s;
+  animation-delay: 0s;
+  /* background-color: red; */
+}
+
+.itemWrap .item:nth-child(4) {
+  left: 70%;
+  width: 15x;
+  height: 15x;
+  animation-delay: .3s;
+  /* background-color: red; */
+}
+
+.itemWrap .item:nth-child(5) {
+  left: 85%;
+  width: 50x;
+  height: 50x;
+  animation-duration: 13s;
+  animation-delay: .3s;
+  /* background-color: red; */
+  
+}
+
+.itemWrap .item:nth-child(6) {
+  left: 95%;
+  width: 10x;
+  height: 10x;
+  animation-delay: 0s;
+  /* background-color: red; */
+}
+
+
+
+/*------ flow two ---------- */
+.itemWrap .item:nth-child(7) {
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  animation-duration: 15s;
+  animation-delay: 7s;
+  /* background-color: green; */
+}
+
+.itemWrap .item:nth-child(8) {
+  left: 90%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 15s;
+  /* background-color: green; */
+}
+
+/*------ flow three ---------- */
+.itemWrap .item:nth-child(9) {
+  left: 25%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 5s;
+  /* background-color: blue; */
+}
+
+.itemWrap .item:nth-child(10) {
+  left: 75%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 20s;
+  /* background-color: blue; */
+}
+/*------ flow End ---------- */
+
+
+
+.topPageSocialIcon .social-icons__item{
+  color: var(--white);
+}
+
+
+.downButton {
+  position: absolute;
+  /* bottom: 25px; */
+  bottom: 40px;
+  animation-name: downBtnAnimate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.downButton a {
+  color: var(--white);
+  border: 1px solid;
+  display: inline-block;
+  padding: 5px 21px;
+  border-radius: 50px;
+  position: relative;
+  background: var(--moreInfoBtn);
+  z-index: 2;
+  transition: 0.2s;
+}
+
+.downButton a:after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: 50%;
+  top: 100%;
+}
+
+.downButton:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: 50%;
+  top: 100%;
+}
+
+.downButton:hover a {
+  background: var(--moreInfoBtnHover);
+  text-decoration: none;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes downBtnAnimate{
+  0%{
+    bottom: 40px;
+  }
+
+  100%{
+    bottom: 30px;
+  }
+}
