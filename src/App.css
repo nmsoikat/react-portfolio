@@ -1,6 +1,7 @@
 :root {
   --white: #fff;
   --black: #000;
+  --lightgreen: greenyellow;
   --name: #4cff8a;
   --moreInfoBtn: #231c1c;
   --moreInfoBtnHover: #3e2e1f;
@@ -37,7 +38,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.85);
   z-index: -1;
 }
 /* wrap sidebar and main content */

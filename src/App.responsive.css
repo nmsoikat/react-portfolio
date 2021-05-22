@@ -1,0 +1,54 @@
+/* Large Device lg */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+ 
+
+}
+
+/* Medium Device md */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+
+}
+
+/* Medium To Extra Small Device */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+
+  .social-icons__item {
+    font-size: 18px !important;
+  }
+
+}
+
+/* Small Device sm */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  
+
+}
+
+/* Extra Small device */
+@media only screen and (max-width: 575px) {
+  
+
+}
+
+
+
+@media (max-width:991px){
+  .resume-content {
+    flex-direction: column;
+  }
+
+  .resume-content__desc,
+  .resume-content__year-map {
+    width: 100%;
+  }
+
+  .resume-content__year-map h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+}

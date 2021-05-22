@@ -1,22 +1,15 @@
-:root {
-  --aboutDark: #fd6dea;
-  --aboutLight: #fd6dea;
-  --text: #000;
-}
+
 .about-content {
   display: flex;
-  /* justify-content: center; */
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
 .about-info {
-  /* background-color: var(--aboutDark); */
   border-radius: 3px;
   padding: 15px;
   padding-right: 100px;
   max-width: 800px;
-  /* border: 5px solid var(--aboutLight); */
 }
 
 .about-info,
@@ -30,14 +23,13 @@
 
 .about-info__name {
   font-size: 50px;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 0;
   font-family: "Itim", cursive;
 }
 
 .highlight-text {
-  color: greenyellow;
-  /* font-size: 50px; */
+  color: var(--name)
 }
 
 .about-info__designation {
@@ -47,13 +39,13 @@
 }
 
 .about-info__description {
-  color: #fff;
+  color: var(--white);
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .skills {
-  color: #fff;
+  color: var(--white);
   margin-bottom: 5px;
 }
 
@@ -62,8 +54,8 @@
   border: none;
   padding: 10px 15px;
   background-color: transparent;
-  border: 0.1px dotted greenyellow;
-  color: greenyellow;
+  border: 0.1px dotted var(--name);
+  color: var(--name);
   font-weight: bold;
   display: inline-block;
   letter-spacing: 1px;
@@ -81,7 +73,7 @@
   content: "";
   width: 100%;
   height: 3%;
-  background-color: greenyellow;
+  background-color: var(--name);
   left: 0%;
   top: 0%;
   z-index: -1;
@@ -90,18 +82,18 @@
 }
 
 .btn-resume:hover:before {
-  background-color: greenyellow;
+  background-color: var(--name);
   height: 100%;
   opacity: 1;
 }
 
 .btn-resume:hover {
   color: var(--text);
-  background-color: greenyellow;
+  background-color: var(--name);
 }
 
 .skill-title {
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -114,7 +106,7 @@
   left: -2px;
   top: 50%;
   height: 20px;
-  background-color: greenyellow;
+  background-color: var(--lightgreen);
   width: 145px;
   z-index: -1;
 }
@@ -125,10 +117,10 @@
 }
 
 .skill {
-  background-color: #aaa;
+  background-color: rgb(211, 211, 211);
   border-radius: 50px;
   padding: 5px 10px;
-  color: #fff;
+  color: var(--white);
   margin-left: 15px;
   margin-bottom: 8px;
 }
@@ -174,15 +166,7 @@
   background-color: #EA8C10;
 }
 
-.blogs-area {
-  padding: 15px;
-  /* background-color: var(--aboutDark); */
-  /* border: 5px solid rgb(255 246 217);   */
-}
-
 .section-title {
-  /* background-color: var(--aboutLight); */
-  /* text-align: center; */
   padding-top: 5px;
   padding-bottom: 5px;
 }

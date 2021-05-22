@@ -8,21 +8,21 @@
   display: block;
   padding-top: 5px;
   padding-bottom: 5px;
-  color: #fff;
+  color: var(--black);
   transition: .3s;
   border-radius: 50px;
-  background-color: rgb(138, 195, 91);
+  background-color: var(--lightgreen);
   margin-bottom: 5px;
   text-align: center;
 }
 
 .sidebar li a:hover {
-  background-color: rgb(107, 160, 64);
+  background-color: var(--name);
   text-decoration: none;
 }
 
 .sidebar li  .navLinkActive{
-  background-color: rgb(65, 104, 33);
+  background-color: var(--name);
 }
 
 .subMenu{
@@ -30,7 +30,6 @@
   margin-left: 5px;
   margin-right: 5px;
   width: 100%;
-  /* background-color: rgb(155, 223, 100); */
 }
 
 .active-sub-menu svg{

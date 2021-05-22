@@ -3,25 +3,28 @@
 }
 
 .resume__title {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
   font-weight: bold;
-  color: var(--themeDarkColor);
   font-size: 25px;
-  position: relative;
+  margin-bottom: 10px;
   display: inline-block;
-  /* border-bottom: 0.1px dotted var(--themeDarkColor); */
+  padding: 2px 5px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  color: var(--black);
 }
 
-/* .resume__title::before{
-  content: "";
+.resume__title::before {
   position: absolute;
+  content: "";
   left: 0;
-  top: 85%;
-  width: 50%;
-  height: 2px;
-  background-color: #ff8d00;
-} */
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--lightgreen);
+  z-index: -1;
+  border-radius: 15px;
+}
 
 .resume-content__year-map {
   width: 25%;
@@ -52,7 +55,7 @@
 .resume-content__desc {
   padding-bottom: 10px;
   width: 75%;
-  border-bottom: 0.1px dotted #00203f;
+  border-bottom: 0.1px dotted var(--white);
 }
 
 .resume-content:last-child .resume-content__desc{
@@ -99,19 +102,4 @@
 
 
 
-@media (max-width:991px){
-  .resume-content {
-    flex-direction: column;
-  }
 
-  .resume-content__desc,
-  .resume-content__year-map {
-    width: 100%;
-  }
-
-  .resume-content__year-map h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-}

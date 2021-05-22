@@ -42,8 +42,6 @@
 .animationArea {
   width: 100%;
   height: 100vh;
-  /* background: linear-gradient(to left, #7209b7, #b5179e);
-   */
   position: absolute;
   z-index: -1;
 }
@@ -236,4 +234,68 @@
   100%{
     bottom: 30px;
   }
+}
+
+
+/* Large Device lg */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+ 
+
+}
+
+/* Medium Device md */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mainContentWrap h1 {
+    font-size: 50px;
+  }
+  .designation {
+    font-size: 30px;
+  }
+
+
+}
+
+/* Medium To Extra Small Device */
+@media only screen and (max-width: 767px) {
+
+  .mainContentWrap h1 {
+    font-size: 40px;
+  }
+  .designation {
+    font-size: 25px;
+  }
+
+}
+
+/* Small Device sm */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  
+
+}
+
+/* Extra Small device */
+@media only screen and (max-width: 575px) {
+  .mainContentWrap h1 {
+    font-size: 25px;
+  }
+  .designation {
+    font-size: 18px;
+  }
+
+  
+  .downButton a {
+    font-size: 12px;
+    padding: 2px 18px;
+  }
+  
+  .downButton a:after {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .downButton:after {
+    width: 15px;
+    height: 15px;
+  }
+
 }
