@@ -12,7 +12,7 @@ const ManageProject = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContent);
 
   useEffect(() => {
-    fetch("http://localhost:4000/projects/all")
+    fetch("https://tranquil-earth-86948.herokuapp.com/projects/all")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
@@ -20,7 +20,7 @@ const ManageProject = () => {
   }, []);
 
   const deleteHandler = (id) => {
-    fetch(`http://localhost:4000/projectDeleteById/${id}`, {
+    fetch(`https://tranquil-earth-86948.herokuapp.com/projectDeleteById/${id}`, {
       method: "DELETE",
       headers: {
         admin: `${secureToken} ${loggedInUser.email}`,
@@ -45,7 +45,7 @@ const ManageProject = () => {
     setProjects(modifiedProjects);
 
     // update BACKEND
-    fetch(`http://localhost:4000/projectUpdateById/${id}`, {
+    fetch(`https://tranquil-earth-86948.herokuapp.com/projectUpdateById/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -69,7 +69,7 @@ const ManageProject = () => {
   };
 
   return (
-    <div className="section-container manageProject-container">
+    <div className="admin-section-container manageProject-container">
       <div className="content-wrap">
         <div className="admin-sidebar-container">
           <AdminSidebar />

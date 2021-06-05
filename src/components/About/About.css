@@ -1,15 +1,17 @@
 
 .about-content {
   display: flex;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 60px;
 }
-
+.profile-image-wrap {
+  flex-shrink: 0;
+}
 .about-info {
   border-radius: 3px;
   padding: 15px;
   padding-right: 100px;
-  max-width: 800px;
+  width: 100%;
 }
 
 .about-info,
@@ -169,4 +171,137 @@
 .section-title {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+
+
+/* =================================== Menu Button ===================== */
+.mBtn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: no-repeat;
+  overflow: hidden;
+  position: absolute;
+  right: -60px;
+  top: 10px;
+  background-color: #309b55;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.mBtn.open {
+  right: -45px;
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: #4cff8a;
+  background-color: #050504;
+}
+.mBtn.open span {background-color: #4cff8a;}
+
+.mBtn span {
+  width: 50%;
+  background-color: #fff;
+  height: 4px;
+  display: block;
+  float: left;
+  margin-bottom: 3px;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.mBtn span:nth-child(odd) {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.mBtn span:nth-child(even) {
+  border-radius: 0px 15px 15px 0px;
+}
+
+.mBtn span:nth-last-child(1),
+.mBtn span:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+/* ----------- Close Sign --------- */
+.mBtn.open  span:nth-child(3) {
+  transform: translateX(-100%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mBtn.open  span:nth-child(4) {
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mBtn.open  span:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 0px);
+}
+
+.mBtn.open  span:nth-child(2) {
+  transform: rotate(-45deg) translate(-2px, 0px);
+}
+
+.mBtn.open  span:nth-last-child(1) {
+  transform: rotate(45deg) translate(-2px, 1.5px);
+}
+.mBtn.open  span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(2px, 1.5px);
+}
+
+
+/* Medium Device md */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile-image-wrap {
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .about-info {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/* Medium To Extra Small Device */
+@media only screen and (max-width: 767px) {
+  .profile-image-wrap {
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .about-info {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/* Small Device sm */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  
+
+}
+
+/* Extra Small device */
+@media only screen and (max-width: 575px) {
+  
+
+}
+
+
+
+@media (max-width:991px){
+  
+
 }

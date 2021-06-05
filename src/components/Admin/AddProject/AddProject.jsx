@@ -20,7 +20,7 @@ const AddProject = () => {
 
   useEffect(() => {
     if (id) {
-      fetch(`http://localhost:4000/project/${id}`)
+      fetch(`https://tranquil-earth-86948.herokuapp.com/project/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setProject(data);
@@ -61,7 +61,7 @@ const AddProject = () => {
         console.log(createdProject);
 
         if (project._id) {
-          fetch(`http://localhost:4000/projectUpdateById/${id}`, {
+          fetch(`https://tranquil-earth-86948.herokuapp.com/projectUpdateById/${id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",
@@ -83,7 +83,7 @@ const AddProject = () => {
               console.log(err);
             });
         } else {
-          fetch("http://localhost:4000/addProject", {
+          fetch("https://tranquil-earth-86948.herokuapp.com/addProject", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -126,7 +126,7 @@ const AddProject = () => {
     // this function return promise
   };
   return (
-    <div className="section-container addProject-container">
+    <div className="admin-section-container addProject-container">
       <div className="content-wrap">
         <div className="admin-sidebar-container">
           <AdminSidebar />

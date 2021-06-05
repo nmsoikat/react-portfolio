@@ -22,7 +22,7 @@ const AddBlog = () => {
   useEffect(() => {
     if(id){
 
-      fetch(`http://localhost:4000/blog/${id}`)
+      fetch(`https://tranquil-earth-86948.herokuapp.com/blog/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setBlog(data);
@@ -58,7 +58,7 @@ console.log(blog.showOnAbout)
         };
 
         if(blog._id){
-          fetch(`http://localhost:4000/blogUpdateById/${id}`, {
+          fetch(`https://tranquil-earth-86948.herokuapp.com/blogUpdateById/${id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",
@@ -80,7 +80,7 @@ console.log(blog.showOnAbout)
               console.log(err);
             });
         } else {
-          fetch("http://localhost:4000/addBlog", {
+          fetch("https://tranquil-earth-86948.herokuapp.com/addBlog", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -123,7 +123,7 @@ console.log(blog.showOnAbout)
     // this function return promise
   };
   return (
-    <div className="section-container addBlog-container">
+    <div className="admin-section-container addBlog-container">
       <div className="content-wrap">
         <div className="admin-sidebar-container">
           <AdminSidebar />

@@ -29,3 +29,33 @@ li.sidebar__item a {
 .sidebar-title {
   text-align: center;
 }
+
+.admin-sidebar-container .sidebar {
+  position: fixed;
+  width: 300px;
+  top: 0;
+}
+
+
+.ad-sidebar__item {
+  margin-top: 15px;
+  line-height: 2.5;
+}
+
+.ad-sidebar__item:hover a {
+  background-color: #638db2;
+  color: #fff;
+}
+
+.ad-sidebar__item a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding-left: 8px;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+.ad-sidebar__item a > .icon {
+  margin-right: 8px;
+}

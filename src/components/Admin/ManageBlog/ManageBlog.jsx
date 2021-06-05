@@ -12,7 +12,7 @@ const ManageBlog = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContent);
 
   useEffect(() => {
-    fetch("http://localhost:4000/blogs")
+    fetch("https://tranquil-earth-86948.herokuapp.com/blogs")
       .then((res) => res.json())
       .then((data) => {
         setBlogs(data);
@@ -20,7 +20,7 @@ const ManageBlog = () => {
   }, []);
 
   const deleteHandler = (id) => {
-    fetch(`http://localhost:4000/blogDeleteById/${id}`, {
+    fetch(`https://tranquil-earth-86948.herokuapp.com/blogDeleteById/${id}`, {
       method: "DELETE",
       headers: {
         admin: `${secureToken} ${loggedInUser.email}`,
@@ -43,7 +43,7 @@ const ManageBlog = () => {
     modifiedBlogs[index].showOnAbout = e.target.checked;
     setBlogs(modifiedBlogs);
 
-    fetch(`http://localhost:4000/blogUpdateById/${id}`, {
+    fetch(`https://tranquil-earth-86948.herokuapp.com/blogUpdateById/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +65,7 @@ const ManageBlog = () => {
   };
 
   return (
-    <div className="section-container manageBlog-container">
+    <div className="admin-section-container manageBlog-container">
       <div className="content-wrap">
         <div className="admin-sidebar-container">
           <AdminSidebar />

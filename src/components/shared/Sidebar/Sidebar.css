@@ -2,27 +2,33 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 .sidebar li a {
   display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
   color: var(--black);
   transition: .3s;
-  border-radius: 50px;
-  background-color: var(--lightgreen);
-  margin-bottom: 5px;
   text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
 }
 
 .sidebar li a:hover {
   background-color: var(--name);
   text-decoration: none;
+  color: #000;
 }
 
 .sidebar li  .navLinkActive{
   background-color: var(--name);
+  color: #000;
 }
 
 .subMenu{
@@ -35,3 +41,4 @@
 .active-sub-menu svg{
   transform: rotate(90deg);
 }
+

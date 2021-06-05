@@ -16,8 +16,8 @@ const AdminSidebar = () => {
       <h2 className="sidebar__item sidebar-title">
         <NavLink to="/">NM Soikat</NavLink>
       </h2>
-      <ul className="sidebar">
-        <li className="sidebar__item">
+      <ul className="ad-sidebar">
+        <li className="ad-sidebar__item">
           <NavLink to="/admin/projects">
             <span className="icon">
               <FaClipboardList />
@@ -25,7 +25,7 @@ const AdminSidebar = () => {
             Projects
           </NavLink>
         </li>
-        <li className="sidebar__item">
+        <li className="ad-sidebar__item">
           <NavLink to="/admin/addProject">
             <span className="icon">
               <FaProjectDiagram />
@@ -33,7 +33,7 @@ const AdminSidebar = () => {
             Add Project
           </NavLink>
         </li>
-        <li className="sidebar__item">
+        <li className="ad-sidebar__item">
           <NavLink to="/admin/blogs">
             <span className="icon">
               <FaThList />
@@ -41,7 +41,7 @@ const AdminSidebar = () => {
             Blogs
           </NavLink>
         </li>
-        <li className="sidebar__item">
+        <li className="ad-sidebar__item">
           <NavLink to="/admin/addBlog">
             <span className="icon">
               <FaBloggerB />

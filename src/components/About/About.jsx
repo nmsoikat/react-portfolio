@@ -12,9 +12,28 @@ import BlogItem from "../Blogs/BlogItem/BlogItem";
 const About = () => {
   // const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
+  const [expand, setExpand] = useState(false);
+
+  const menuBtn = (event) => {
+    const mBtn = event.target;
+    if (mBtn.classList.contains("mBtn")) {
+      mBtn.classList.toggle("open");
+    } else if (mBtn.parentElement.classList.contains("mBtn")) {
+      mBtn.parentElement.classList.toggle("open");
+    }
+
+    if (
+      mBtn.classList.contains("open") ||
+      mBtn.parentElement.classList.contains("open")
+    ) {
+      setExpand(true);
+    } else {
+      setExpand(false);
+    }
+  };
 
   // useEffect(() => {
-  //   fetch("http://localhost:4000/projects/all?showOnAbout=" + true)
+  //   fetch("https://tranquil-earth-86948.herokuapp.com/projects/all?showOnAbout=" + true)
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setProjects(data);
@@ -22,7 +41,9 @@ const About = () => {
   // }, []);
 
   useEffect(() => {
-    fetch("http://localhost:4000/blogs?showOnAbout=" + true)
+    fetch(
+      "https://tranquil-earth-86948.herokuapp.com/blogs?showOnAbout=" + true
+    )
       .then((res) => res.json())
       .then((data) => {
         setBlogs(data);
@@ -34,9 +55,20 @@ const About = () => {
     from: { opacity: 0 },
     config: { duration: 500 },
   });
+
   return (
     <animated.div style={props} className="section-container about-container">
-      <div className="sidebar-container">
+      <div
+        className={expand ? "sidebar-container expand" : "sidebar-container"}
+      >
+        <button className="mBtn" onClick={(event) => menuBtn(event)}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <Sidebar />
       </div>
       <div className="container">
@@ -78,28 +110,26 @@ const About = () => {
           <h2 className="skill-title">Skill Set</h2>
 
           <div className="skills-wrap">
-          <span className="skill html">HTML</span>
-          <span className="skill css">CSS</span>
-          <span className="skill bootstrap">Bootstrap</span>
-          <span className="skill js">Javascript</span>
-          <span className="skill react">React</span>
-          <span className="skill redux">Redux</span>
-          <span className="skill nodejs">NodeJS</span>
-          <span className="skill express">Express</span>
-          <span className="skill mongodb">MongoDB</span>
-          <span className="skill mongoose">Mongoose</span>
-          <span className="skill sql">SQL</span>
+            <span className="skill html">HTML</span>
+            <span className="skill css">CSS</span>
+            <span className="skill bootstrap">Bootstrap</span>
+            <span className="skill js">Javascript</span>
+            <span className="skill react">React</span>
+            <span className="skill redux">Redux</span>
+            <span className="skill nodejs">NodeJS</span>
+            <span className="skill express">Express</span>
+            <span className="skill mongodb">MongoDB</span>
+            <span className="skill mongoose">Mongoose</span>
+            <span className="skill sql">SQL</span>
           </div>
-
         </div>
 
         <div className="contact-area mt-5">
           <h2 className="skill-title">Contact</h2>
 
           <div className="contact-wrap">
-          <Footer />
+            <Footer />
           </div>
-
         </div>
 
         <div className="blogs-area">
@@ -112,8 +142,6 @@ const About = () => {
           </div> */}
         </div>
       </div>
-
-     
     </animated.div>
   );
 };
