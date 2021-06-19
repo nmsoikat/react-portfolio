@@ -1,2 +1,8 @@
 
 
+.blogs-content{
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  border-radius: 15px;
+  color: var(--white);
+}

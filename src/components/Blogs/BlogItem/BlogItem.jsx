@@ -9,12 +9,14 @@ const BlogItem = ({ blog }) => {
         <img src={blog.imgUrl} alt="" className="img-fluid" />
       </div>
       <div className="blog-item__content">
-        <h2 className="blog-item__title">{blog.title}</h2>
+        <h2 className="blog-item__title"><a href={blog.url} target="_blank">{blog.title}</a></h2>
         <p className="blog-item__body">
           {blog.desc.length < 200
             ? blog.desc
             : blog.desc.substr(0, 200) + "..."}
+            <a className="see-more" href={blog.url} target="_blank">see more</a>
         </p>
+        
       </div>
     </div>
   );

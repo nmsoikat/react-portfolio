@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
 const Navbar = () => {
-  const [subMenu, setSubMenu] = useState(false);
+  const [subMenu, setSubMenu] = useState(true);
   const props = useSpring({
     to: { opacity: 1, visibility: "visible", height: "auto" },
     from: { opacity: 0, visibility: "hidden", height: 0 },
@@ -30,9 +30,13 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
+        <NavLink activeClassName="navLinkActive" to="/blogs">
+          Blogs
+        </NavLink>
+      </li>
+      <li>
         <NavLink
           onClick={() => setSubMenu(!subMenu)}
-          activeClassName="navLinkActive"
           to="/projects/all"
         >
           Projects
@@ -43,8 +47,8 @@ const Navbar = () => {
         {subMenu && (
           <animated.ul style={{ ...props }} className="subMenu">
             <li>
-              <NavLink activeClassName="navLinkActive" to="/projects/frontend">
-                Frontend
+              <NavLink activeClassName="navLinkActive" to="/projects/all">
+                All
               </NavLink>
             </li>
             <li>
@@ -52,14 +56,15 @@ const Navbar = () => {
                 MERN
               </NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="navLinkActive" to="/projects/frontend">
+                Frontend
+              </NavLink>
+            </li>
           </animated.ul>
         )}
       </li>
-      <li>
-        <NavLink activeClassName="navLinkActive" to="/blogs">
-          Blogs
-        </NavLink>
-      </li>
+
     </ul>
   );
 };

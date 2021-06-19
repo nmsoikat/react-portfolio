@@ -12,7 +12,7 @@ const AddBlog = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContent);
   const { id } = useParams()
 
-  console.log(id);
+  // console.log(id);
 
 
   if (loggedInUser.email === "") {
@@ -44,7 +44,7 @@ const AddBlog = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-console.log(blog.showOnAbout)
+// console.log(blog.showOnAbout)
     const imgUrl = uploadImageGetUrl(e.target.image.files[0]); //promise
     imgUrl
       .then((dataImgURL) => {

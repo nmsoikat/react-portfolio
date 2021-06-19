@@ -13,18 +13,15 @@
 /* Medium To Extra Small Device */
 @media only screen and (max-width: 767px) {
   body {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
-  .social-icons__item {
-    font-size: 18px !important;
-  }
 
 }
 
 /* Small Device sm */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  
+
 
 }
 
@@ -37,18 +34,6 @@
 
 
 @media (max-width:991px){
-  .resume-content {
-    flex-direction: column;
-  }
 
-  .resume-content__desc,
-  .resume-content__year-map {
-    width: 100%;
-  }
-
-  .resume-content__year-map h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
 
 }

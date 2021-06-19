@@ -12,7 +12,7 @@ const AddProject = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContent);
   const { id } = useParams();
 
-  console.log(id);
+  // console.log(id);
 
   if (loggedInUser.email === "") {
     history.replace({ pathname: "/login" });
@@ -28,7 +28,7 @@ const AddProject = () => {
     }
   }, []);
 
-  console.log(project);
+  // console.log(project);
 
 
   const onChangeHandler = (e) => {
@@ -45,7 +45,7 @@ const AddProject = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(project.showOnAbout)
+    // console.log(project.showOnAbout)
     const imgUrl = uploadImageGetUrl(e.target.image.files[0]); //promise
     imgUrl
       .then((dataImgURL) => {
@@ -58,7 +58,7 @@ const AddProject = () => {
           imgUrl: dataImgURL,
         };
 
-        console.log(createdProject);
+        // console.log(createdProject);
 
         if (project._id) {
           fetch(`https://tranquil-earth-86948.herokuapp.com/projectUpdateById/${id}`, {
@@ -83,7 +83,7 @@ const AddProject = () => {
               console.log(err);
             });
         } else {
-          fetch("https://tranquil-earth-86948.herokuapp.com/addProject", {
+          fetch("http://localhost:4000/addProject", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

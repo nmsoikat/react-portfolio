@@ -83,11 +83,11 @@ const About = () => {
                   <span className="hi">Hi, </span>
                   This Is <span className="highlight-text">Soikat</span>
                 </h1>
-                <p className="about-info__designation">Front-End Developer</p>
+                <p className="about-info__designation">Frontend Developer</p>
                 <p className="about-info__description">
                   I build website front to back. I have
-                  <strong> 1.6 year of experience</strong> in Front-End
-                  Development. Now, I am available as a MERN stack developer.
+                  <strong> 1.6 year of experience</strong> in Frontend
+                  Development. I am available as a MERN Stack developer.
                 </p>
                 {/* <p className="skills strongAt">
                   <strong>Strong Skills: </strong> HTML, CSS, Bootstrap, Javascript, React, Redux
@@ -96,11 +96,18 @@ const About = () => {
                   <strong>Familiar Skills:</strong> Express, NodeJS, MongoDB, Mongoose, SQL
                 </p> */}
                 <a
+                  href="https://drive.google.com/file/d/1RUtUgdkjuXxTisI2nO_M4oh4bAAKwYrv/view"
+                  target="_blank"
+                  className="button btn-resume mt-4"
+                >
+                  View Resume
+                </a>
+                {/* <a
                   href="/file/Nur__Front-End.pdf"
                   className="button btn-resume mt-4"
                 >
                   Download Resume
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

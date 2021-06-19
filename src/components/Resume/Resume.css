@@ -4,3 +4,55 @@
   border-radius: 15px;
   color: var(--white);
 }
+
+.experience__responsibility > p {
+  margin-bottom: 2px;
+}
+
+
+
+@media (min-width: 768px) and (max-width:991px){
+
+  .resume-content__year-map{
+    width: 40% !important;
+  }
+
+  .resume-content__desc{
+    width: auto !important;
+  }
+
+  .resume-content__year-map h2 {
+    font-size: 18px !important;
+    margin-bottom: 5px !important;
+  }
+
+}
+
+/* Small Device sm */
+@media (max-width: 767px) {
+  .resume-content__year-map h2 {
+    font-size: 16px !important;
+  }
+
+  .resume-content__year-map {
+      width: auto !important;
+      margin-right: 15px !important;
+  }
+
+  .resume-content__year-map h2 span {
+      display: block !important;
+  }
+
+  .experience__designation {
+      font-size: 18px !important;
+  }
+
+  .resume__title {
+      font-size: 20px !important;
+  }
+
+  .experience__designation {
+      margin-bottom: 2px !important;
+  }
+
+}

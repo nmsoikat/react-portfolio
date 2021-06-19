@@ -1,23 +1,111 @@
-/* .projects-content {
-  display: flex;
-} */
-
-/* .project-item {
-  width: 48%;
-  display: flex;
-  height: fit-content;
-} */
-
-/* .projects-on-about-section .project-item {
-  width: 100%;
-  margin-bottom: 15px;
+.project-item {
+  margin: 15px;
+  width: 30.63%;
+  background-color: #fff;
   padding: 10px;
-  border-radius: 5px;
-  background-color: rgb(251 251 251);
-  border: 1px solid #ddd;
-} */
+  border-radius: 15px;
+}
 
 
-/* .project-item__photo img {
-  max-height: 200px;
-} */
+.project-item__title {
+  font-size: 22px;
+  margin: 10px 0px;
+}
+
+.project-item__body {
+  min-height: 145px;
+  max-height: 145px;
+  overflow-y: auto;
+  position: relative;
+    z-index: 5;
+}
+
+.project-item__photo img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+
+.project-item {
+  position: relative;
+}
+
+.project-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+
+.project-item:hover::before{
+  opacity: .8;
+  visibility: visible;
+}
+
+.project-item:hover .p-view-btn{
+  visibility: visible;
+  opacity: 1;
+  top: 50%;
+}
+
+.project-item:hover .project-item__body{
+  color: #777;
+}
+
+.p-view-btn {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #309b55;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 2px solid #00892f;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+.p-view-btn:hover {
+  background-color: #33c164;
+  text-decoration: none;
+  color: #000;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .project-item{
+    width: 30.1%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .project-item{
+    width: 45.6%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-item{
+    width: 100%;
+  }
+  .project-item__body{
+    min-height: auto;
+  }
+}

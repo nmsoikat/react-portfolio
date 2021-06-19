@@ -17,12 +17,12 @@ const ResumeCard = () => {
           </div>
 
           <div className="resume-content__desc experience">
-            <h2 className="experience__designation">Front-End Developer</h2>
+            <h2 className="experience__designation">Frontend Developer</h2>
             <p className="experience__company-name">b-cause Bangladesh, ltd.</p>
             <p className="experience__responsibility">
               <p>Responsibilities:</p>
               <ul>
-                <li>Front End Part from PSD Or Concept</li>
+                <li>Frontend part from PSD or Concept</li>
                 <li>Responsiveness and Layout Fixing</li>
                 <li>Working on ERP project</li>
               </ul>

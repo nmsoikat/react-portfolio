@@ -7,7 +7,7 @@ import { useParams } from "react-router";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const {category} = useParams()
+  const { category } = useParams()
 
   const [expand, setExpand] = useState(false);
 
@@ -54,10 +54,12 @@ const Projects = () => {
         <Sidebar />
       </div>
       <div className="container">
-        <div className="projects-content card-columns column-break-inside">
-          {projects.map((project) => (
-            <ProjectCard key={project._id} project={project} />
-          ))}
+        <div className="projects-content">
+          <div className="projects-wrap">
+            {projects.map((project) => (
+              <ProjectCard key={project._id} project={project} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
