@@ -21,7 +21,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--lightgreen);
+  background-color: var(--name);
   z-index: -1;
   border-radius: 15px;
 }

@@ -19,14 +19,14 @@ const ResumeCard = () => {
           <div className="resume-content__desc experience">
             <h2 className="experience__designation">Frontend Developer</h2>
             <p className="experience__company-name">b-cause Bangladesh, ltd.</p>
-            <p className="experience__responsibility">
+            <div className="experience__responsibility">
               <p>Responsibilities:</p>
               <ul>
                 <li>Frontend part from PSD or Concept</li>
                 <li>Responsiveness and Layout Fixing</li>
                 <li>Working on ERP project</li>
               </ul>
-            </p>
+            </div>
           </div>
         </article>
       </section>
@@ -49,6 +49,7 @@ const ResumeCard = () => {
             <p className="experience__responsibility">
               10th Semester (2 semester remaining)
             </p>
+            <p className="experience__responsibility">CGPA: 3.65 (out of 4)</p>
           </div>
         </article>
 

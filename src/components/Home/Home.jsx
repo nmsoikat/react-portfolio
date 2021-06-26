@@ -13,18 +13,18 @@ const Home = () => {
 
   return (
     <animated.div style={props} className={styles.homeContainer}>
-      <div class={styles.animationArea}>
-        <div class={styles.itemWrap}>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
-          <div class={styles.item}></div>
+      <div className={styles.animationArea}>
+        <div className={styles.itemWrap}>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
+          <div className={styles.item}></div>
         </div>
       </div>
       <div className={styles.mainContentWrap}>

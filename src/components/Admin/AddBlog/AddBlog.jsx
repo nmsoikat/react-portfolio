@@ -200,16 +200,16 @@ const AddBlog = () => {
                   />
                 </div>
               </div>
-              <div class="form-check">
+              <div className="form-check">
                 <input
                 onChange={checkboxOnChangeHandler}
                   type="checkbox"
-                  class="form-check-input"
+                  className="form-check-input"
                   id="showOnAbout"
                   name="showOnAbout"
                   checked={blog.showOnAbout}
                 />
-                <label class="form-check-label" for="showOnAbout">
+                <label className="form-check-label" for="showOnAbout">
                   Show on about page
                 </label>
               </div>

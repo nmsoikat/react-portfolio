@@ -55,11 +55,16 @@ const Projects = () => {
       </div>
       <div className="container">
         <div className="projects-content">
-          <div className="projects-wrap">
-            {projects.map((project) => (
-              <ProjectCard key={project._id} project={project} />
-            ))}
-          </div>
+          {projects.length > 0 ?
+            <div className="projects-wrap">
+              {projects.map((project) => (
+                <ProjectCard key={project._id} project={project} />
+              ))}
+            </div> :
+            <div class="spinner-border text-success" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          }
         </div>
       </div>
     </div>
