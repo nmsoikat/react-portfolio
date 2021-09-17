@@ -81,11 +81,11 @@ const About = () => {
               <div className="about-info">
                 <h1 className="about-info__name">
                   <span className="hi">Hi, </span>
-                  This Is <span className="highlight-text">Soikat</span>
+                  This Is <span className="highlight-text">Nur</span>
                 </h1>
-                <p className="about-info__designation">Frontend Developer</p>
+                <p className="about-info__designation">MERN Stack Developer</p>
                 <p className="about-info__description">
-                I am a developer. I build web applications. I have 1.6 years of experience in frontend development.
+                I build web applications. I have 1.6 years of experience in frontend development.
                 </p>
                 {/* <p className="skills strongAt">
                   <strong>Strong Skills: </strong> HTML, CSS, Bootstrap, Javascript, React, Redux
@@ -93,13 +93,13 @@ const About = () => {
                 <p className="skills familiar">
                   <strong>Familiar Skills:</strong> Express, NodeJS, MongoDB, Mongoose, SQL
                 </p> */}
-                <a
-                  href="https://drive.google.com/file/d/1RBloRChaIrKFklb0iiFB9r28qPFKwzwf/view?usp=sharing"
+                {/* <a
+                  href="#"
                   target="_blank"
                   className="button btn-resume mt-4"
                 >
                   View Resume
-                </a>
+                </a> */}
                 {/* <a
                   href="/file/Nur__Front-End.pdf"
                   className="button btn-resume mt-4"
@@ -136,16 +136,6 @@ const About = () => {
             <Footer />
           </div>
         </div>
-
-        {/* <div className="blogs-area">
-          <h2 className="section-title">Blogs</h2>
-
-          <div className="blogs-on-about-section">
-            {blogs.map((blog) => (
-              <BlogItem blog={blog} />
-            ))}
-          </div>
-        </div> */}
 
       </div>
     </animated.div>

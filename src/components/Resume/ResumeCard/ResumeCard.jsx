@@ -22,9 +22,9 @@ const ResumeCard = () => {
             <div className="experience__responsibility">
               <p>Responsibilities:</p>
               <ul>
-                <li>Frontend part from PSD or Concept</li>
+                <li>HTML from psd or concept</li>
+                <li>Working on ERP applications.</li>
                 <li>Responsiveness and Layout Fixing</li>
-                <li>Working on ERP project</li>
               </ul>
             </div>
           </div>
@@ -47,9 +47,9 @@ const ResumeCard = () => {
               Dhaka International University
             </p>
             <p className="experience__responsibility">
-              10th Semester (2 semester remaining)
+              11th Semester (1 semester remaining)
             </p>
-            <p className="experience__responsibility">CGPA: 3.65 (out of 4)</p>
+            <p className="experience__responsibility">CGPA: 3.66 (out of 4)</p>
           </div>
         </article>
 

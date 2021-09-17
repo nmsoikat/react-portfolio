@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialIcons.css";
-import { FaGithub, FaHackerrank, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaHackerrank, FaLinkedin, FaCode } from "react-icons/fa";
 
 const SocialIcons = () => {
   return (
@@ -26,6 +26,13 @@ const SocialIcons = () => {
         className="social-icons__item hackerRank"
       >
         <FaHackerrank />
+      </a>
+      <a
+        href="https://www.codewars.com/users/Nur_"
+        target="_blank"
+        className="social-icons__item codewars"
+      >
+        <FaCode />
       </a>
     </article>
   );

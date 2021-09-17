@@ -29,7 +29,7 @@ const Home = () => {
       </div>
       <div className={styles.mainContentWrap}>
         <h1>Nur Mohammad Soikat</h1>
-        <p className={styles.designation}>Frontend Developer</p>
+        <p className={styles.designation}>MERN Stack Developer</p>
         <div className="tp-icons-wrap">
           <SocialIcons />
         </div>
